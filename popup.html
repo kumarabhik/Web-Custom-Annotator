@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Custom Annotator</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Times New Roman', sans-serif;
+            background-color: rgb(237, 244, 183);
+        }
+
+        .custom-color-picker {
+            margin: 10px 0;
+        }
+
+        .custom-note {
+            margin: 10px 0;
+        }
+
+        .form-control,
+        .btn,
+        #custom-annotations-list {
+            width: 100%;
+        }
+
+        .custom-annotator {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .custom-box {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        .custom-btn {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .custom-input,
+        .custom-textarea {
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body class="container mt-4">
+    <div class="custom-annotator">
+        <h2 class="text-center">Web Custom Annotator</h2>
+        <div class="custom-search custom-box">
+            <input type="text" id="custom-search" class="form-control custom-input" placeholder="Search custom annotations...">
+            <button id="custom-search-btn" class="btn btn-primary custom-btn mt-2">Search</button>
+        </div>
+        <div class="custom-color-picker custom-box">
+            <label for="custom-highlight-color">Custom Highlight Color:</label>
+            <input type="color" id="custom-highlight-color" class="form-control custom-input" value="#f4a1e3">
+        </div>
+        <div class="custom-box">
+            <button id="custom-highlight-btn" class="btn btn-warning custom-btn">Custom Highlight</button>
+        </div>
+        <div class="custom-note custom-box">
+            <textarea id="custom-note" class="form-control custom-textarea" rows="4" placeholder="Add a custom note..."></textarea>
+        </div>
+        <div class="custom-box">
+            <button id="save-custom-note-btn" class="btn btn-success custom-btn">Save Custom Note</button>
+        </div>
+        <div id="custom-annotations-list" class="mt-4 custom-box"></div>
+        <div class="mt-4 custom-box">
+            <button id="custom-export-btn" class="btn btn-info custom-btn">Export Custom Annotations</button>
+            <button id="delete-custom-note-btn" class="btn btn-danger custom-btn">Delete Custom Note</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="customPopup.js"></script>
+</body>
+
+</html>

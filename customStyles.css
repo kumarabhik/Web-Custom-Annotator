@@ -1,0 +1,33 @@
+.customAnnotation {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 2px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.customAnnotation-note {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 5px;
+  margin-top: 5px;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Existing CSS remains the same */
+
+.bubble {
+  display: inline-block;
+  padding: 8px 16px; /* Adjust padding for smaller size */
+  border-radius: 20px; /* Adjust border radius for a smaller bubble */
+  background-color: #ff6347; /* Change bubble color to a different option */
+  color: white;
+  font-size: 14px; /* Adjust font size for smaller text */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bubble:hover {
+  background-color: #ff4500; /* Change hover color to a darker shade */
+}

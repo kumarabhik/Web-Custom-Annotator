@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "Web Custom Annotator",
+  "version": "1.0",
+  "description": "Annotate and highlight web content with custom settings.",
+  "permissions": [
+      "activeTab",
+      "storage"
+  ],
+  "background": {
+      "service_worker": "customBackground.js"
+  },
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "128": "computer.png"
+      }
+  },
+  "content_scripts": [
+      {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"],
+          "css": ["customStyles.css"]
+      }
+  ],
+  "icons": {
+      "128": "computer.png"
+  },
+  "web_accessible_resources": [
+      {
+          "resources": ["customIcons/*"],
+          "matches": ["<all_urls>"]
+      }
+  ],
+  "commands": {
+      "highlightText": {
+          "suggested_key": {
+              "default": "Ctrl+Shift+H"
+          },
+          "description": "Highlight selected text with custom settings"
+      },
+      "addCustomNote": {
+          "suggested_key": {
+              "default": "Ctrl+Shift+N"
+          },
+          "description": "Add a custom note"
+      }
+  }
+}
