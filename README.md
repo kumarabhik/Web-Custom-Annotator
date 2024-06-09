@@ -1,7 +1,7 @@
-#Web Annotator
+Web Annotator
 Web Annotator is a browser extension designed to facilitate text annotation and highlighting functionalities on web pages, empowering users to enrich their browsing experience with personalized notes and annotations.
 
-##Features
+Features
 Text Highlighting: Enables users to selectively highlight text segments within web pages using a custom color palette.
 Note Addition: Facilitates the addition of contextual notes to selected text, enhancing the user's ability to annotate and capture important information.
 Annotation Search: Employs a search functionality to swiftly locate specific annotations within the browser extension interface.
@@ -23,7 +23,7 @@ Select "Load unpacked" and designate the directory where the repository was clon
 
 The Web Annotator extension will now be accessible via the browser's toolbar, ready for utilization.
 
-##Usage
+Usage
 Text Highlighting: Employ the cursor to select desired text segments within web pages. Subsequently, access the extension's toolbar and utilize the "Custom Highlight" button to apply custom coloration to the selected text.
 
 Note Addition: After highlighting text of interest, utilize the "Add Note" button within the extension's toolbar to append relevant notes. A prompt window will facilitate the input of supplementary information.
@@ -34,5 +34,5 @@ Annotation Export: Trigger the "Export Annotations" button to generate a JSON fi
 
 Annotation Deletion: To remove a specific annotation, navigate to the extension interface and click on the "Delete Note" button corresponding to the annotation in question.
 
-##Contributing
+Contributing
 Contributions to the Web Annotator project are encouraged and appreciated. Should you wish to contribute, kindly fork the repository and submit a pull request with your proposed changes.
